@@ -19,6 +19,7 @@ public class CheatActivity extends AppCompatActivity {
     private boolean mAnswerIsTrue;
     private boolean mCheat = false;
     private TextView mAnswerTextView;
+    private TextView mApiLevelTextView;
     private Button mShowAnswer;
     private static final String KEY_CHEAT = "cheat";
     public static final String EXTRA_ANSWER_SHOWN =
@@ -79,6 +80,8 @@ public class CheatActivity extends AppCompatActivity {
         }
 
             );
+        mApiLevelTextView = (TextView) findViewById(R.id.api_level_text_view);
+        mApiLevelTextView.setText("Api level "+ Build.VERSION.SDK_INT);
 
         }
 
